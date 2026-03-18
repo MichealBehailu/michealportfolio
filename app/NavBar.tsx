@@ -12,6 +12,7 @@ export default function NavBar(){
                  <p className='text-xl font-semibold text-[#00c4cc]'>Home</p>
                  <p className='text-xl font-semibold text-[#00c4cc]'>Projects</p>
                  <p className='text-xl font-semibold text-[#00c4cc]'>Skills</p>
+                 <p className='text-xl font-semibold text-[#00c4cc]'>About</p>
                  <Button className='text-xl font-semibold text-[#00c4cc] border border-[#00c4cc] bg-transparent hover:bg-[#00c4cc]/30 cursor-pointer' type="button">Contact Me</Button>
                
             </div>
