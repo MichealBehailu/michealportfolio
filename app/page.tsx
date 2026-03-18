@@ -31,7 +31,7 @@ export default function Home() {
         
         <div className="w-full h-8 bg-[#00c4cc]"></div>
 
-        <section className="bg-[#00c4cc] w-full h-[100vh]" id="about">
+        <section className="bg-[#00c4cc] w-full h-[103vh]" id="about">
           
           <div className="p-10 m-4">
             <p className="text-7xl font-semibold text-white">About</p>
@@ -42,11 +42,15 @@ export default function Home() {
             <p className="text-white w-[50%] text-3xl pr-10">Micheal Behailu is a creative web developer and designer who builds responsive, user-centered websites with clean code and modern aesthetics. He combines design thinking with front-end and back-end skills to craft digital experiences that are both functional and visually engaging.</p>
           </div>
           
-          <div className="flex items-center  p-10 m-4 w-full">
-            <p className="text-white text-3xl w-[50%]">Aside from designing and coding, Micheal enjoys books and movies, where he finds ideas for future projects.</p>
+          <div className="flex items-center gap-50 p-10 m-4 w-full">
+            <p className="text-white text-3xl w-[50%]">Aside from designing and coding, Micheal enjoys books and movies, where he finds ideas for future projects.<span className="block w-[50%]  border-b-5 mt-5 border-white"></span></p>
             <Image src={profile} alt="Profile" className="w-[20%] h-[20%] rounded-full" />
+            
           </div>
         </section>
+
+        <div className="w-full h-8 bg-white"></div>
+
       </div>
     
   );
