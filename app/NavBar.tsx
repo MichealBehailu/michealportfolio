@@ -6,14 +6,14 @@ export default function NavBar(){
     return(
         <div className="flex justify-between ">
             <div className="">
-                <h1 className="text-2xl font-bold text-[#00c4cc]">MICHEAL B.</h1>
+                <h1 className="text-2xl font-bold">MICHEAL B.</h1>
             </div>
             <div className="flex justify-center gap-8">
-                 <p className='text-xl font-semibold text-[#00c4cc]'>Home</p>
-                 <p className='text-xl font-semibold text-[#00c4cc]'>Projects</p>
-                 <p className='text-xl font-semibold text-[#00c4cc]'>Skills</p>
-                 <p className='text-xl font-semibold text-[#00c4cc]'>About</p>
-                 <Button className='text-xl font-semibold text-[#00c4cc] border border-[#00c4cc] bg-transparent hover:bg-[#00c4cc]/30 cursor-pointer' type="button">Contact Me</Button>
+                 <p className='text-xl font-semibold text-[#EAC048]'>Home</p>
+                 <p className='text-xl font-semibold text-[#EAC048]'>Projects</p>
+                 <p className='text-xl font-semibold text-[#EAC048]'>Skills</p>
+                 <p className='text-xl font-semibold text-[#EAC048]'>About</p>
+                 <Button className='text-xl font-semibold text-[#EAC048] border border-[#EAC048] bg-transparent hover:bg-[#EAC048]/30 cursor-pointer' type="button">Contact Me</Button>
                
             </div>
         </div>
