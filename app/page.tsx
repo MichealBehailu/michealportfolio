@@ -54,7 +54,7 @@ export default function Home() {
       label: "Full Stack",
       description:
         "WellTalk is a mental health support platform that connects users with licensed therapists for confidential online counseling. It offers flexible scheduling, secure video sessions, and personalized treatment plans.",
-      link: "",
+      link: "#",
       image:"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRNBzsmHfaAHNm-4dFXbXRy0nlJKhuKO9qKe1jplW8iconfqn2T",
       alt:"WellTalk"
     },
@@ -132,6 +132,56 @@ export default function Home() {
         <div className="flex flex-wrap justify-between items-center gap-0">
           {projects.map((item)=>(
 
+          <Card className="relative mx-auto w-[30%] max-w-sm h-[40%] hover:scale-105 transition-transform duration-300 pt-0" key={item.title}>
+            <Image
+              width={500}
+              height={100}
+              src={item.image}
+              alt={item.alt}
+              className="relative z-20 aspect-video w-full object-cover "
+            />
+            <CardHeader>
+              <CardAction>
+                <Badge variant="outline" className="text-black bg-yellow-500" >{item.label}</Badge>
+              </CardAction>
+              <CardTitle className="inline-flex items-center gap-2 mb-1">
+                {item.icon} {item.title}
+              </CardTitle>
+              <CardDescription>
+                {item.description}
+              </CardDescription>
+            </CardHeader>
+            <CardFooter className="w-full">
+              <Link href={item.link} className="w-full">
+              <Button type='button'className="w-full cursor-pointer  " > <SquareArrowOutUpRight /> View Project </Button>
+              </Link>
+            </CardFooter>
+          </Card>
+          ))}
+          
+        </div>
+
+         <div className="p-10 m-4 flex justify-center items-center">
+          <p className="text-3xl font-semibold inline-block  ">
+           Check out other <span className="underline inline-flex items-center"> <Link href="/projects">projects</Link> <MoveUpRight /></span>{" "} 
+          </p>
+        </div>
+      </section>
+
+      {/* <div className="w-full h-8 bg-white"></div> */}
+       {/* Skills And Tools Section */}
+
+      <section className=" w-full h-[102vh]" id="projects">
+        <div className="p-10 m-4 flex justify-between items-center">
+          <p className="text-5xl font-semibold ">
+            Skills And Tools{" "}
+          </p>
+          <div className="w-[70%] border-b-5 mt-5 border-black"></div>
+        </div>
+
+        <div className="flex flex-col md:flex-row justify-between items-center gap-0 pt-5">
+          {projects.map((item)=>(
+
           <Card className="relative mx-auto w-[30%] max-w-sm h-[40%] pt-0" key={item.title}>
             <Image
               width={500}
@@ -165,9 +215,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      <div className="w-full h-8 bg-white"></div>
-
     </div>
   );
 }
