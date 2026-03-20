@@ -58,7 +58,7 @@ export default function Home() {
         <section className="bg-[#EAC048] w-full h-[107vh]" id="projects">
           
           <div className="p-10 m-4 flex justify-between items-center">
-            <p className="text-7xl font-semibold text-white">Projects </p>
+            <p className="text-7xl font-semibold text-white">Featured Projects </p>
             <div className="w-[70%] border-b-5 mt-5 border-black"></div>
           </div>
 
