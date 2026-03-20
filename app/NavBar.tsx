@@ -23,7 +23,7 @@ export default function NavBar() {
           <User /> About
         </p>
         <Button
-          className="text-xl font-semibold text-[#EAC048] border border-[#EAC048] bg-transparent hover:bg-[#EAC048]/30 cursor-pointer"
+          className="text-xl font-semibold text-[#EAC048] border border-[#EAC048] bg-transparent hover:bg-[#EAC048]/30 hover:text-black cursor-pointer"
           type="button"
         >
           <Mail /> Contact Me

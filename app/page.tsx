@@ -4,9 +4,10 @@ import Image from "next/image";
 // import background from "@/public/background.png";
 import profile from "@/public/profile.png";
 import { ReactNode } from "react";
-import { ChartNoAxesCombined, HeartPulse, SquareArrowOutUpRight, TvMinimal } from "lucide-react";
+import { ChartNoAxesCombined, HeartPulse, MoveUpRight, SquareArrowOutUpRight, TvMinimal } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import Link from 'next/link'
 import {
   Card,
   CardAction,
@@ -70,7 +71,7 @@ export default function Home() {
     <div className="flex flex-col">
       <section className="flex justify-between  flex-col p-10 m-4  w-[95%] h-[85vh]">
         <NavBar />
-        <div className="flex flex-col text-center items-center justify-center h-[80vh] pt-50 pb-50">
+        <div className="flex flex-col text-center items-center justify-center h-[70vh] pt-50 pb-50">
           <h1 className="text-6xl text-[#EAC048] font-bold">
             Hi, I’m Micheal Behailu
           </h1>
@@ -120,7 +121,7 @@ export default function Home() {
 
       {/* Projects Section */}
 
-      <section className="bg-[#EAC048] w-full h-[107vh]" id="projects">
+      <section className="bg-[#EAC048] w-full h-[102vh]" id="projects">
         <div className="p-10 m-4 flex justify-between items-center">
           <p className="text-5xl font-semibold ">
             Featured Projects{" "}
@@ -157,7 +158,16 @@ export default function Home() {
           ))}
           
         </div>
+
+         <div className="p-10 m-4 flex justify-center items-center">
+          <p className="text-3xl font-semibold inline-block  ">
+           Check out other <span className="underline inline-flex items-center"> <Link href="/projects">projects</Link> <MoveUpRight /></span>{" "} 
+          </p>
+        </div>
       </section>
+
+      <div className="w-full h-8 bg-white"></div>
+
     </div>
   );
 }
