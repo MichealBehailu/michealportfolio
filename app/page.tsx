@@ -175,7 +175,7 @@ export default function Home() {
       {/* <div className="w-full h-8 bg-white"></div> */}
        {/* Skills And Tools Section */}
 
-      <section className=" w-full h-[102vh]" id="skills">
+      <section className=" w-full h-full" id="skills">
         <div className="p-10 m-4 flex justify-between items-center">
           <p className="text-5xl font-semibold ">
             Skills And Tools{" "}
@@ -236,6 +236,11 @@ export default function Home() {
               
           </div>
         </div>
+
+      </section>
+
+      <section className=" w-full h-[105vh] bg-[#EAC048] flex items-center justify-center" >
+        <p className="text-8xl font-bold text-black w-[65%] text-center">let your website vision become a reality.</p>
 
       </section>
     </div>
