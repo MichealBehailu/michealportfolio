@@ -12,9 +12,7 @@ import {
   SquareArrowOutUpRight,
   TvMinimal,
 } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import ContactForm from "@/components/form/ContactForm";
 import {
   Card,
   CardAction,
@@ -29,7 +27,7 @@ export default function Projects() {
   return (
     <section className=" p-10 m-4">
       <NavBar />
-      <section className=" w-full h-[105vh] bg-[#EAC048] flex flex-col items-center justify-center" id="contact">
+      <section className=" w-full h-[105vh]  flex flex-col items-center justify-center" id="contact">
         <p className="text-8xl font-bold text-black w-[65%] text-center">
           let your website vision become a reality.
         </p>
