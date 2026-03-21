@@ -19,6 +19,7 @@ import {
 import { FaReact } from "react-icons/fa";
 import csharp from "@/public/csharp.svg";
 import java from "@/public/java.svg";
+import ContactForm from '../components/form/ContactForm'
 
 export default function Home() {
   const projects: {
@@ -241,7 +242,7 @@ export default function Home() {
 
       <section className=" w-full h-[105vh] bg-[#EAC048] flex items-center justify-center" >
         <p className="text-8xl font-bold text-black w-[65%] text-center">let your website vision become a reality.</p>
-
+        <ContactForm/>
       </section>
     </div>
   );
