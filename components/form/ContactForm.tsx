@@ -37,6 +37,7 @@ export default function ContactForm() {
                 <Input
                   id="checkout-7j9-card-number-uw1"
                   placeholder="Your last name here"
+                  className="h-10"
                   required
                 />
 
@@ -59,7 +60,7 @@ export default function ContactForm() {
             </FieldGroup>
           </FieldSet>
           <Field orientation="horizontal" >
-            <Button type="submit" className='w-full'>Contact</Button>
+            <Button type="submit" className='w-full h-10 cursor-pointer hover:opacity-75 active:bg-[#EAC048]'>Contact</Button>
           </Field>
         </FieldGroup>
       </form>

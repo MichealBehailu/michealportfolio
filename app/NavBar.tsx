@@ -18,25 +18,19 @@ export default function NavBar() {
           <House /> Home
         </Link>
         <Link
-          href={"/Projects"}
+          href={"/projects"}
           className="text-xl font-semibold text-[#EAC048] flex items-center gap-2"
         >
           <Layers /> Projects
         </Link>
-        <a
-          href="#skills"
-          onClick={(e) => {
-            e.preventDefault();
-            document
-              .getElementById("skills")
-              ?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="text-xl font-semibold text-[#EAC048] flex items-center gap-2 cursor-pointer"
+        <Link
+          href="/skills"
+          className="text-xl font-semibold text-[#EAC048] flex items-center gap-2"
         >
           <Sparkles /> Skills
-        </a>
+        </Link>
         <Link
-          href={""}
+          href='/about'
           className="text-xl font-semibold text-[#EAC048] flex items-center gap-2"
         >
           <User /> About
