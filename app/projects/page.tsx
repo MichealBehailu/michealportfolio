@@ -76,15 +76,7 @@ export default function Projects() {
             </Card>
           ))}
         </div>
-        <div className="p-10 m-4 flex justify-center items-center">
-          <p className="text-3xl font-semibold inline-block  ">
-            Check out other{" "}
-            <span className="underline inline-flex items-center">
-              {" "}
-              <Link href="/projects">projects</Link> <MoveUpRight />
-            </span>{" "}
-          </p>
-        </div>
+        
       </section>
     </section>
   );
