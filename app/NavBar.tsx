@@ -41,12 +41,20 @@ export default function NavBar() {
         >
           <User /> About
         </Link>
-        <Button
-          className="text-xl font-semibold text-[#EAC048] border border-[#EAC048] bg-transparent hover:bg-[#EAC048]/30 hover:text-black cursor-pointer"
-          type="button"
-        >
-          <Mail /> Contact Me
-        </Button>
+        <Link href='#contact'
+        onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("contact")
+              ?.scrollIntoView({ behavior: "smooth" });
+          }}>
+          <Button
+            className="text-xl font-semibold text-[#EAC048] border border-[#EAC048] bg-transparent hover:bg-[#EAC048]/30 hover:text-black cursor-pointer"
+            type="button"
+          >
+            <Mail /> Contact Me
+          </Button>
+        </Link>
       </div>
     </div>
   );
