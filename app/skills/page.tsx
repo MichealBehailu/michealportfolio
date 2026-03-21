@@ -5,6 +5,8 @@ import csharp from "@/public/csharp.svg";
 import java from "@/public/java.svg";
 // import background from "@/public/background.png";
 
+{/** TODO: make the icons small and visit yafe message on telegram to get the portfolio and navigate to skills  */}
+
 export default function Skills() {
   return (
     <section className=" p-10 m-4">
