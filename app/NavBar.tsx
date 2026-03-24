@@ -18,25 +18,24 @@ export default function NavBar() {
           <House /> Home
         </Link>
         <Link
-          href={"/projects"}
+          href={"#projects"}
           className="text-xl font-semibold text-[#EAC048] flex items-center gap-2"
         >
           <Layers /> Projects
         </Link>
         <Link
-          href="/skills"
+          href="#skills"
           className="text-xl font-semibold text-[#EAC048] flex items-center gap-2"
         >
           <Sparkles /> Skills
         </Link>
         <Link
-          href='/about'
+          href="#about"
           className="text-xl font-semibold text-[#EAC048] flex items-center gap-2"
         >
           <User /> About
         </Link>
-        <Link href='/contact'
-        >
+        <Link href="#contact">
           <Button
             className="text-xl font-semibold text-[#EAC048] border border-[#EAC048] bg-transparent hover:bg-[#EAC048]/30 hover:text-black cursor-pointer"
             type="button"
