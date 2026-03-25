@@ -71,7 +71,6 @@ export const projects: {
 ];
 
 export default function Home() {
-
   // const sectionStyle = {
   //   backgroundImage: `url(${background.src})`,
   //   backgroundSize: "cover",
@@ -202,13 +201,13 @@ export default function Home() {
           <div className="w-[70%] border-b-5 mt-5 border-black"></div>
         </div>
 
-        <div className="flex flex-row ">
           {/* Frontend Technologies */}
+        <div className="flex flex-row ">
           <div className="p-10 m-4 flex flex-col items-center">
             <p className="text-2xl">Frontend Technologies</p>
             <div className="mt-4 flex flex-col items-center gap-3 ">
               <svg
-                className="w-20 h-20 hover:ring-4 hover:ring-sky-500 hover:ring-offset-2 transition-all duration-300"
+                className="w-20 h-20 hover:scale-105 hover:drop-shadow-[0_0_30px_#87CEEB] transition-all duration-300"
                 role="img"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -397,9 +396,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" w-full h-[105vh] bg-[#EAC048] flex flex-col items-center justify-center" id="contact">
+      <section
+        className=" w-full h-[105vh] bg-[#EAC048] flex flex-col items-center justify-center"
+        id="contact"
+      >
         <p className="text-8xl font-bold text-black w-[65%] text-center">
-          let your website vision become a reality.
+          Let your website vision become a reality.
         </p>
         <div className="w-[50%] bg-white flex justify-center p-10 rounded-2xl mt-5">
           <ContactForm />
