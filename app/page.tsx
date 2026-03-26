@@ -81,7 +81,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="flex justify-between  flex-col p-10 m-4  w-[95%] h-[85vh]">
+      <div className="flex justify-between  flex-col m-4   w-full p-10 ">
         <NavBar />
         <div className="flex flex-col text-center items-center justify-center h-[70vh] pt-50 pb-50">
           <h1 className="text-6xl text-[#EAC048] font-bold">
@@ -93,13 +93,13 @@ export default function Home() {
             and technologies.{" "}
           </h2>
         </div>
-      </section>
+      </div>
 
       <div className="w-full h-6 bg-[#EAC048]"></div>
 
       {/* About Section */}
 
-      <section className="bg-black w-full h-[107vh]" id="about">
+      <div className="bg-black  w-full h-[500%] p-10" id="about">
         <div className="p-10 m-4">
           <p className="text-3xl font-semibold text-[#EAC048]">About</p>
           <p className="text-5xl font-semibold text-white">Micheal Behailu</p>
@@ -127,13 +127,13 @@ export default function Home() {
             className="w-[20%] h-[20%] rounded-full"
           />
         </div>
-      </section>
+      </div>
 
       {/* <div className="w-full h-8 bg-white"></div> */}
 
       {/* Projects Section */}
 
-      <section className="bg-[#EAC048] w-full h-[102vh]" id="projects">
+      <div className="bg-[#EAC048]  w-full p-10" id="projects">
         <div className="p-10 m-4 flex justify-between items-center">
           <p className="text-5xl font-semibold ">Featured Projects </p>
           <div className="w-[70%] border-b-5 mt-5 border-black"></div>
@@ -191,12 +191,12 @@ export default function Home() {
             </span>{" "}
           </p>
         </div>
-      </section>
+      </div>
 
       {/* <div className="w-full h-8 bg-white"></div> */}
       {/* Skills And Tools Section */}
 
-      <section className=" w-full h-full" id="skills">
+      <div className=" w-full p-10" id="skills">
         <div className="p-10 mt-4 ml-4 mr-4 mb-0 flex justify-between items-center">
           <p className="text-5xl font-semibold ">Skills And Tools </p>
           <div className="w-[70%] border-b-5 mt-5 border-black"></div>
@@ -402,20 +402,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section
-        className=" w-full h-[105vh] bg-[#EAC048] flex flex-col items-center justify-center"
+      <div
+        className=" w-full bg-[#EAC048] flex flex-col items-center justify-center p-10"
         id="contact"
       >
-        <p className="text-8xl font-bold text-black w-[65%] text-center">
+        <p className="text-8xl font-bold text-black w-[75%] text-center">
           Let your website vision become a reality.
         </p>
         <div className="w-[50%] bg-white flex justify-center p-10 rounded-2xl mt-5">
           {/* TODO: implement the functionality of the contact form */}
           <ContactForm />
         </div>
-      </section>
+      </div>
     </div>
   );
 }

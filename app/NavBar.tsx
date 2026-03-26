@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <div className="flex justify-between ">
+    <div className="flex justify-between p-3">
       <div className="">
         <h1 className="text-2xl font-bold">MICHEAL B.</h1>
       </div>

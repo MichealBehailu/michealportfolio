@@ -16,15 +16,19 @@ import {Textarea} from '../ui/textarea'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState([{
-    firstName: '',
+    firstName: '' as string | null,
     lastName: '' as string | null,
-    message: '' as string | null
+    message: '' as string //if they submit without write=ing message then lets work.... will be sent
   }])
 
-  const 
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    console.log(formData)
+  }
+  
   return (
     <div className="w-full max-w-md">
-      <form onSubmit={(e) => e.preventDefault()}>
+      <form onSubmit={handleSubmit}>
         <FieldGroup>
           <FieldSet>
             <FieldGroup>
@@ -37,7 +41,7 @@ export default function ContactForm() {
                   placeholder="Your first name here"
                   className="h-10"
                   required
-                  value={formData[0].firstName}
+                  value={formData[0].firstName || " "}
                   onChange={(e) => setFormData([{...formData[0], firstName: e.target.value}])}
                 />
               </Field>
@@ -67,7 +71,7 @@ export default function ContactForm() {
                   id="checkout-7j9-optional-comments"
                   placeholder="Let's work together! I am interested."
                   className="active:border-yellow-500"
-                  value={formData[0].message || "Let's work together! I am interested."}
+                  value={formData[0].message ? formData[0].message : "Let's work together! I am interested."}
                   onChange={(e) => setFormData([{...formData[0], message: e.target.value}])}
                 />
               </Field>
