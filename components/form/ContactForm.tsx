@@ -23,7 +23,29 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(formData)
+    const { firstName, lastName, message } = formData[0]
+
+    const encode = (data: string): string => {
+      return encodeURIComponent(data)
+        .replace(/%20/g, '+')
+        .replace(/%2C/gi, ',')
+    }
+
+    const formBody = `firstName=${encode(firstName!)}&lastName=${encode(lastName!)}&message=${encode(message)}`
+
+    const formWindow = window.open('', '_blank')
+    if (formWindow) {
+      formWindow.location.href = `mailto:michealbehailu@gmail.com?subject=Contact Form Submission&body=${formBody}`
+    }
+    
+    
+    setFormData([{
+          firstName: '',
+          lastName: '',
+          message: '',
+
+    }])
+
   }
   
   return (
@@ -32,18 +54,18 @@ export default function ContactForm() {
         <FieldGroup>
           <FieldSet>
             <FieldGroup>
-              <Field>
-                <FieldLabel htmlFor="checkout-7j9-card-name-43j">
+               <Field>
+                <FieldLabel htmlFor="checkout-7j9-card-number-uw1">
                   First Name
                 </FieldLabel>
                 <Input
-                  id="checkout-7j9-card-name-43j"
+                  id="checkout-7j9-card-number-uw1"
                   placeholder="Your first name here"
                   className="h-10"
-                  required
-                  value={formData[0].firstName || " "}
+                  value={formData[0].firstName || ""}
                   onChange={(e) => setFormData([{...formData[0], firstName: e.target.value}])}
                 />
+
               </Field>
               <Field>
                 <FieldLabel htmlFor="checkout-7j9-card-number-uw1">
@@ -69,9 +91,9 @@ export default function ContactForm() {
                 </FieldLabel>
                 <Textarea
                   id="checkout-7j9-optional-comments"
-                  placeholder="Let's work together! I am interested."
+                  placeholder="Your message here..."
                   className="active:border-yellow-500"
-                  value={formData[0].message ? formData[0].message : "Let's work together! I am interested."}
+                  value={formData[0].message || ""}
                   onChange={(e) => setFormData([{...formData[0], message: e.target.value}])}
                 />
               </Field>
