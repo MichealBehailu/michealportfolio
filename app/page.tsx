@@ -29,7 +29,7 @@ import java from "@/public/java.svg";
 import ContactForm from "../components/form/ContactForm";
 import asm from '@/public/asm.png'
 
-export const projects: {
+export const projects: { //for the projcet 
   icon: ReactNode;
   title: string;
   label: string;
