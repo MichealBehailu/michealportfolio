@@ -72,12 +72,15 @@ export const projects: { //for the projcet
 ];
 
 export default function Home() {
+  
   // const sectionStyle = {
   //   backgroundImage: `url(${background.src})`,
   //   backgroundSize: "cover",
   //   backgroundPosition: "center",
   //   height: "100vh",
   // };
+
+  //add scrolling effect
 
   return (
     <div className="flex flex-col">
