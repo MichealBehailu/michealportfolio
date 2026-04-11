@@ -5,6 +5,7 @@ import { House, Layers, Sparkles, User, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function NavBar() {
+  //add scrolling effect
   return (
     <div className="flex justify-between p-3">
       <div className="">
